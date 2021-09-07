@@ -1,0 +1,255 @@
+:root {
+    /*variables globales, propiedades personalizadas, para colores repetidos*/
+    --blanco: #ffffff;
+    --color1: #e0d1cb;
+    --color2: #d1cab4;
+    --color3: #212f59;
+    --color4: #467694;
+    --color5: #abd3d1;
+    --oscuro: #121320;
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img{
+    width:320px; 
+    align-self: start;
+    height: auto;
+}
+.navbar-bg{
+    width: 100%;
+    background-color: var(--color3);
+    padding:5px 0px;
+    box-sizing: border-box;
+       
+}
+.navegacion{
+    height: auto;   
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 960px;
+}
+
+
+/* centrar el menu*/
+nav ul{
+    float: left;
+    list-style-type: none;
+    padding: 0; 
+  
+    position: relative; 
+    left: 50%;
+}
+nav ul li{
+    float: left;
+    position: relative; 
+    right: 50%;
+}
+nav ul li a{
+    color:#d6bc74;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform:uppercase;
+    padding-left: 20px;
+    letter-spacing: 1px;
+   
+
+}
+nav ul li a:hover{
+    color:var(--color2);
+    
+}
+
+@font-face{
+    font-family: rale;
+    src:url(../fuentes/Raleway-Regular.ttf)
+}
+
+.imagen{
+   background: url(..//img/header1590.jpg);
+   background-size: cover;
+   height: 200px;
+   
+}
+.logo{
+    text-align: center;
+}
+
+/* estilos del footer*/
+/*CAJA GENERAL*/
+.footer-distribucion{
+    width: 100%;
+    background-color:var(--color3);
+    padding: 20px 50px;
+        
+}
+div {
+    width: 100%;
+    background-color:var(--blanco);
+   /* display:block;*/
+}
+.about{
+width: 50%;
+background-color: var(--color3);
+padding: 10px 20px 10px 10px;
+/*display:block;*/
+float: left;
+}
+.about p{
+    color: var(--blanco);
+}
+.team{
+    width: 50%;
+    background-color:var(--color3);
+    padding: 10px 0px;
+    float: left;
+    padding: 5px;
+
+    
+    }
+/*
+.team ul{
+    list-style-type: none;
+}*/
+.project{
+    clear: both;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #212f59;
+    padding-top: 10px;
+}
+.división{
+    width: 90%;
+    margin: auto;
+    color: #d6bc74;
+}
+
+/*estilo de icono de Github*/
+.project a i{
+    font-size:40PX;
+    color: gray;
+        
+}
+
+.tabla{
+        display: table;
+             
+      
+}
+.team, .tabla, .fila, .columna,.columna-enc, .fila-enc, .fila{
+    background-color: #212f59;
+}
+.fila, .fila-enc{
+    display: table-row;
+    width: 200px;
+    text-align: center;
+   
+    }
+    .fila{
+        color: #ffffff;
+    } 
+.columna, .columna-enc{
+        display: table-cell;
+        width: 200px;
+        }
+
+
+
+
+
+
+
+
+
+/*
+/*caja izquierda
+.distribucion .footer-left
+{
+    width: 40%;
+}
+
+.distribucion .footer-about{
+    line-height: 20px;
+    color: var(--color2);
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+.distribucion .footer-left .footer-about span{
+    text-transform: uppercase;
+    display: block;
+    line-height: 200%;
+}
+.distrubucion .footer-left  .footer-about  span{
+    display: block;
+    text-transform: uppercase;
+    color: var(--color2);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/*icono de Git
+.distribucion .footer-icons {
+    margin-top: 25px;
+}
+.distribucion .footer-icons a {
+    display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/* footer derecho
+.distribucion .footer-right {
+    width: 50%;
+}
+
+.distribucion .footer-right .team i{
+    background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.distribucion .footer-right i.fa-envelope{
+    font-size: 17px;
+	line-height: 38px;
+}
+.distribucion .footer-right .team p {
+    display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.distribucion .footer-right .team p span{
+    display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.distribucion .footer-right .team p a{
+    
+        color:  lightseagreen;
+        text-decoration: none;;
+    }
+}*/

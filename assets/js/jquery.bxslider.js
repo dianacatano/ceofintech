@@ -31,7 +31,7 @@
 		adaptiveHeightSpeed: 500,
 		video: false,
 		useCSS: true,
-		preloadImages: 'visible',
+		preloadimg: 'visible',
 		responsive: true,
 
 		// TOUCH
@@ -133,8 +133,8 @@
 			slider.active = { index: slider.settings.startSlide }
 			// store if the slider is in carousel mode (displaying / moving multiple slides)
 			slider.carousel = slider.settings.minSlides > 1 || slider.settings.maxSlides > 1;
-			// if carousel, force preloadImages = 'all'
-			if(slider.carousel) slider.settings.preloadImages = 'all';
+			// if carousel, force preloadimg = 'all'
+			if(slider.carousel) slider.settings.preloadimg = 'all';
 			// calculate the min / max width thresholds based on min / max number of slides
 			// used to setup and update carousel slides dimensions
 			slider.minThreshold = (slider.settings.minSlides * slider.settings.slideWidth) + ((slider.settings.minSlides - 1) * slider.settings.slideMargin);
@@ -182,7 +182,7 @@
 			el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div></div>');
 			// store a namspace reference to .bx-viewport
 			slider.viewport = el.parent();
-			// add a loading div to display while images are loading
+			// add a loading div to display while img are loading
 			slider.loader = $('<div class="bx-loading" />');
 			slider.viewport.prepend(slider.loader);
 			// set el to a massive width, to hold any needed slides
@@ -245,7 +245,7 @@
 			if(slider.settings.video) el.fitVids();
 			// set the default preload selector (visible)
 			var preloadSelector = slider.children.eq(slider.settings.startSlide);
-			if (slider.settings.preloadImages == "all") preloadSelector = slider.children;
+			if (slider.settings.preloadimg == "all") preloadSelector = slider.children;
 			// only check for control addition if not in "ticker" mode
 			if(!slider.settings.ticker){
 				// if pager is requested, add it
@@ -260,7 +260,7 @@
 			}else{
 				slider.settings.pager = false;
 			}
-			// preload all images, then perform final DOM / CSS modifications that depend on images being loaded
+			// preload all img, then perform final DOM / CSS modifications that depend on img being loaded
 			loadElements(preloadSelector, start);
 		}
 

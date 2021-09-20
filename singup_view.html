@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="img/favico1.ico" sizes="64x64">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="assets/font/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/font/font.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Sawarabi+Gothic&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+  <title>CEO FINTECH</title>
+</head>
+
+<body>
+  <div class="body_wrapper">
+    <div class="center">
+      <header>
+        <div class="header_area">
+          <div class="logo floatleft"><a href="#"><img src="img/logo.png" alt="" /></a></div>
+          <!--Area del Home-->
+          <div class="top_menu floatleft">
+            <!-- menu nav flotante  -->
+            <nav class="top_menu floatleft">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="singup_view.html">Registro</a></li>
+                <li><a href="login_view.html">Ingreso</a></li>
+                <li><a href="suscribirse.html">Suscribirse</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="social_plus_search floatright">
+            <!--Redes sociales-->
+            <div class="social">
+              <ul>
+                <li><a href="https://twitter.com/home?lang=es" class="twitter"></a></li>
+                <li><a href="https://www.facebook.com/" class="facebook"></a></li>
+                <li><a href="#" class="feed"></a></li>
+              </ul>
+            </div>
+
+            <!--Area de busquedas-->
+            <div class="search">
+              <form action="#" method="post" id="search_form">
+                <input type="text" value="Buscar noticias" id="s" />
+                <input type="submit" id="searchform" value="search" />
+                <input type="hidden" value="post" name="post_type" />
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Area de menus del header-->
+        <div class="main_menu_area">
+          <!-- Menu principal -->
+          <nav id="nav" class="main_menu_area">
+            <ul id="nav">
+              <!-- sub menu servicios -->
+              <li><a href="#services">Servicios</a>
+                <ul>
+                  <li><a href="exchange.html">Divisas</a></li>
+                  <li><a href="uvt.html">UVT</a></li>
+                  <li><a href="uvr.html">UVR</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#news">Noticias</a>
+                <ul>
+                  <li><a href="#">Noticia1</a></li>
+                  <li><a href="#">Noticia2</a></li>
+                  <li><a href="#">Noticia3</a></li>
+                  <li><a href="#">Noticia4</a></li>
+                </ul>
+              <li><a href="team.html">Nuestro Equipo</a></li>
+              <li><a href="contact.html">Contáctenos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!--Area de slider de imagenes-->
+        <!-- <div class="slider_area">
+          <div class="slider">
+            <ul class="bxslider">
+              <li><img src="img/1.jpg" alt="" title="Crece el apetito por la renta fija colombiana" /></li>
+              <li><img src="img/2.jpg" alt=""
+                  title="Hay 14 millones de empleos que no se han recuperado en América Latina" /></li>
+              <li><img src="img/3.jpg" alt="" title="Los últimos cambios de la tributaria 2.0" /></li>
+            </ul>
+          </div>
+        </div> -->
+      </header>
+      <!-- Fin del header -->
+
+      <main>
+        <div class="content_area">
+          <div id="register-card" class="card">
+            <div class="card-body">
+              <h2 class="text-center">Registro</h2>
+              <br>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" placeholder="Ingrese su nombre" name="nombre">
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" name="email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="email" placeholder="Ingrese su contraseña"
+                    name="pswd1">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="email" placeholder="Confirme su contraseña"
+                    name="pswd2">
+                </div>
+                <br>
+                <p>¿Qué información desea recibir en el reporte vía correo electrónico?</p>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox1" value="cbox1">&nbsp; El dólar hoy</label><br>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox2" value="cbox2">&nbsp; Histórico del dólar</label><br>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox3" value="cbox3">&nbsp; La UVT hoy</label><br>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox4" value="cbox4">&nbsp; Histórico de la UVT</label><br>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox5" value="cbox5">&nbsp; La UVR hoy</label><br>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" id="cbox6" value="cbox6">&nbsp; Histórico de la UVR</label><br>
+                </div>
+                <br>
+                <p>¿Con qué frecuencia desea recibir el reporte vía correo electrónico?</p>
+
+                <label for="periodicidad"></label>
+
+                <select name="periodicidad" id="periodicidad">
+                  <option value="diariamente">Diariamente</option>
+                  <option value="eemanalmente">Semanalmente</option>
+                  <option value="mensualmente">Mensualmente</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" id="button" class="btn btn-primary deep-purple btn-block ">Enviar</button>
+                <!-- <br> -->
+                <br>
+
+                <br>
+
+                <p>Si ya estás registrado. Ingresa <a href="login_view.html"> aquí</a></p>
+
+
+                <br>
+
+                <div id="btn" class="text-center">
+                  <button type="button" class="btn btn-primary btn-circle btn-sm"><i
+                      class="fa fa-facebook"></i></button>
+                  <button type="button" class="btn btn-danger btn-circle btn-sm"><i class="fa fa-google"></i></button>
+                  <button type="button" class="btn btn-info btn-circle btn-sm"><i class="fa fa-twitter"></i></button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <!--Area de pie de página-->
+      <footer class="footer-section">
+        <div class="footer_top_area">
+          <div class="inner_footer_top"> <img src="img/add3.png" alt="" /> </div>
+        </div>
+        <div class="footer_bottom_area">
+
+          <div class="footer_menu">
+            <ul id="f_menu">
+              <li><a href="https://www.banrep.gov.co/es/indicadores-financieros-diarios">Banco de la República</a>
+              </li>
+              <li><a href="https://www.portafolio.co/">Portafolio</a></li>
+              <li><a href="#">Dolar</a></li>
+              <li><a href="#">Negocios</a></li>
+              <li><a href="#">El Tiempo</a></li>
+              <li><a href="#">El Espectador</a></li>
+              <li><a href="#">Finanzas</a></li>
+              <li><a href="#">Clasificados</a></li>
+            </ul>
+
+          </div>
+
+          <div class="copyright_text">
+            <p>Copyright &copy; 2021 CEO FINTECH. Todos los derechos reservados | Diseñado por Grupo 4 UTP</a></p>
+            <p>Las marcas comerciales y las imágenes utilizadas en el diseño son propiedad intelectual de sus
+              respectivos propietarios y se utilizan únicamente con fines de demostración.</p>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+
+  </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="assets/js/selectnav.min.js"></script>
+  <script type="text/javascript">
+    selectnav('nav', {
+      label: '-Navigation-',
+      nested: true,
+      indent: '-'
+    });
+    selectnav('f_menu', {
+      label: '-Navigation-',
+      nested: true,
+      indent: '-'
+    });
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true
+    });
+  </script>
+</body>
+
+</html>
